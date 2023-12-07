@@ -15,7 +15,13 @@
       "inverse": null
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "база_Данных",
+      "relatedTo": "i-i-s-prilozhenie-40-база-данных",
+      "inverse": "картДоступ"
+    }
+  ],
   "projections": [
     {
       "name": "КартДоступE",
@@ -44,7 +50,15 @@
           "inverse": null
         }
       ],
-      "hasMany": []
+      "hasMany": [
+        {
+          "projectionName": "База_ДанныхE",
+          "caption": "База Данных",
+          "name": "база_Данных",
+          "relatedTo": "i-i-s-prilozhenie-40-база-данных",
+          "inverse": null
+        }
+      ]
     },
     {
       "name": "КартДоступL",

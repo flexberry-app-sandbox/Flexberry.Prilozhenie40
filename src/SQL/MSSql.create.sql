@@ -31,6 +31,17 @@ CREATE TABLE [СправСотр] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [База_Данных] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [НомерКарты] VARCHAR(255)  NULL,
+
+	 [КартДоступ] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [STORMNETLOCKDATA] (
 
 	 [LockKey] VARCHAR(300)  NOT NULL,

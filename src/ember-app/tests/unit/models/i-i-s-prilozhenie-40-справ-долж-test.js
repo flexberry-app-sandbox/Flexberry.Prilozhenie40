@@ -3,6 +3,7 @@ import { moduleForModel, test } from 'ember-qunit';
 moduleForModel('i-i-s-prilozhenie-40-справ-долж', 'Unit | Model | i-i-s-prilozhenie-40-справ-долж', {
   // Specify the other units that are required for this test.
   needs: [
+    'model:i-i-s-prilozhenie-40-база-данных',
     'model:i-i-s-prilozhenie-40-карт-доступ',
     'model:i-i-s-prilozhenie-40-справ-долж',
     'model:i-i-s-prilozhenie-40-справ-сотр',

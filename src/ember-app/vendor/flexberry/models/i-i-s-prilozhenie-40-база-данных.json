@@ -1,0 +1,48 @@
+﻿{
+  "name": "IISPrilozhenie_40База_Данных",
+  "modelName": "i-i-s-prilozhenie-40-база-данных",
+  "className": "База_Данных",
+  "nameSpace": "IIS.Prilozhenie_40",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерКарты",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "картДоступ",
+      "relatedTo": "i-i-s-prilozhenie-40-карт-доступ",
+      "inverse": "база_Данных"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "База_ДанныхE",
+      "modelName": "i-i-s-prilozhenie-40-база-данных",
+      "attrs": [
+        {
+          "name": "номерКарты",
+          "caption": "Номер Карты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

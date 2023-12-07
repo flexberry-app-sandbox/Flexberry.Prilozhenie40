@@ -27,16 +27,21 @@ namespace IIS.Prilozhenie_40
 
     // *** End programmer edit section *** (КартДоступ CustomAttributes)
     [AutoAltered()]
+    [Caption("Карты Доступа")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("КартДоступE", new string[] {
             "СправСотр as \'Сотрудник\'",
             "СправСотр.ФИОСотр as \'Ответственный\'"})]
+    [AssociatedDetailViewAttribute("КартДоступE", "База_Данных", "База_ДанныхE", true, "", "База Данных", true, new string[] {
+            ""})]
     [View("КартДоступL", new string[] {
             "СправСотр.ФИОСотр as \'Ответственный\'"})]
     public class КартДоступ : ICSSoft.STORMNET.DataObject
     {
         
         private IIS.Prilozhenie_40.СправСотр fСправСотр;
+        
+        private IIS.Prilozhenie_40.DetailArrayOfБаза_Данных fБаза_Данных;
         
         // *** Start programmer edit section *** (КартДоступ CustomMembers)
 
@@ -74,6 +79,41 @@ namespace IIS.Prilozhenie_40
                 // *** Start programmer edit section *** (КартДоступ.СправСотр Set end)
 
                 // *** End programmer edit section *** (КартДоступ.СправСотр Set end)
+            }
+        }
+        
+        /// <summary>
+        /// КартДоступ.
+        /// </summary>
+        // *** Start programmer edit section *** (КартДоступ.База_Данных CustomAttributes)
+
+        // *** End programmer edit section *** (КартДоступ.База_Данных CustomAttributes)
+        public virtual IIS.Prilozhenie_40.DetailArrayOfБаза_Данных База_Данных
+        {
+            get
+            {
+                // *** Start programmer edit section *** (КартДоступ.База_Данных Get start)
+
+                // *** End programmer edit section *** (КартДоступ.База_Данных Get start)
+                if ((this.fБаза_Данных == null))
+                {
+                    this.fБаза_Данных = new IIS.Prilozhenie_40.DetailArrayOfБаза_Данных(this);
+                }
+                IIS.Prilozhenie_40.DetailArrayOfБаза_Данных result = this.fБаза_Данных;
+                // *** Start programmer edit section *** (КартДоступ.База_Данных Get end)
+
+                // *** End programmer edit section *** (КартДоступ.База_Данных Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (КартДоступ.База_Данных Set start)
+
+                // *** End programmer edit section *** (КартДоступ.База_Данных Set start)
+                this.fБаза_Данных = value;
+                // *** Start programmer edit section *** (КартДоступ.База_Данных Set end)
+
+                // *** End programmer edit section *** (КартДоступ.База_Данных Set end)
             }
         }
         
