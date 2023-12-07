@@ -28,7 +28,7 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-40-справ-долж-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-долж-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-долж-l.title'),
-            icon: 'folder',
+            icon: 'list',
             children: null
           }]
         }

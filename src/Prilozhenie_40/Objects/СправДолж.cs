@@ -21,13 +21,12 @@ namespace IIS.Prilozhenie_40
 
 
     /// <summary>
-    /// Справ долж.
+    /// СправДолж.
     /// </summary>
     // *** Start programmer edit section *** (СправДолж CustomAttributes)
 
     // *** End programmer edit section *** (СправДолж CustomAttributes)
     [AutoAltered()]
-    [Caption("Справочник Должности")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СправДолжE", new string[] {
             "Должность as \'Должность\'"})]
