@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-40-справ-долж-e",
+  "editForm": "i-i-s-prilozhenie-40-справ-долж-e",
+  "external": false,
+  "caption": "Справ долж",
+  "name": "IISPrilozhenie_40СправДолжL",
+  "className": "СправДолжL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-40-справ-долж",
+      "modelProjection": "СправДолжL"
+    }
+  ]
+}

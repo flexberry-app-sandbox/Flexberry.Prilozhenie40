@@ -1,0 +1,22 @@
+﻿{
+  "applicationCaption": "Prilozhenie_40",
+  "applicationTitle": "Prilozhenie_40",
+  "items": [
+    {
+      "link": null,
+      "menuName": "prilozhenie-40",
+      "caption": "Prilozhenie_40",
+      "title": "Prilozhenie_40",
+      "children": [
+        {
+          "link": "i-i-s-prilozhenie-40-справ-долж-l",
+          "menuName": null,
+          "caption": "Справ долж",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
