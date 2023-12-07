@@ -11,6 +11,17 @@ CREATE TABLE [СправДолж] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [СправСотр] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [ФИОСотр] VARCHAR(255)  NULL,
+
+	 [СправДолж] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [STORMNETLOCKDATA] (
 
 	 [LockKey] VARCHAR(300)  NOT NULL,

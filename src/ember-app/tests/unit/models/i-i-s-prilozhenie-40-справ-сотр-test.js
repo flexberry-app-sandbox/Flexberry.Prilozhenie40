@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-prilozhenie-40-справ-долж', 'Unit | Model | i-i-s-prilozhenie-40-справ-долж', {
+moduleForModel('i-i-s-prilozhenie-40-справ-сотр', 'Unit | Model | i-i-s-prilozhenie-40-справ-сотр', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-prilozhenie-40-справ-долж',

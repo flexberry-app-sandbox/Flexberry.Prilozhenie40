@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISPrilozhenie_40СправСотр",
+  "modelName": "i-i-s-prilozhenie-40-справ-сотр",
+  "className": "СправСотр",
+  "nameSpace": "IIS.Prilozhenie_40",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фИОСотр",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справДолж",
+      "relatedTo": "i-i-s-prilozhenie-40-справ-долж",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправСотрE",
+      "modelName": "i-i-s-prilozhenie-40-справ-сотр",
+      "attrs": [
+        {
+          "name": "фИОСотр",
+          "caption": "Сотрудник",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправДолж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "справДолж",
+          "relatedTo": "i-i-s-prilozhenie-40-справ-долж",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СправСотрL",
+      "modelName": "i-i-s-prilozhenie-40-справ-сотр",
+      "attrs": [
+        {
+          "name": "фИОСотр",
+          "caption": "Сотрудник",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправДолж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "справДолж",
+          "relatedTo": "i-i-s-prilozhenie-40-справ-долж",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
