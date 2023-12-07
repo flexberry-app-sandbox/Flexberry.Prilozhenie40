@@ -9,6 +9,7 @@ moduleForModel('i-i-s-prilozhenie-40-справ-сотр', 'Unit | Serializer | 
     'transform:decimal',
     'transform:guid',
 
+    'model:i-i-s-prilozhenie-40-карт-доступ',
     'model:i-i-s-prilozhenie-40-справ-долж',
     'model:i-i-s-prilozhenie-40-справ-сотр',
     'validator:ds-error',

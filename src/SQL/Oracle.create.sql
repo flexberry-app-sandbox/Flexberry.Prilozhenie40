@@ -2,6 +2,17 @@
 
 
 
+CREATE TABLE "КартДоступ"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"СправСотр" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "СправДолж"
 (
 
@@ -223,6 +234,11 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "КартДоступ"
+	ADD CONSTRAINT "КартДоступ_FС_9230" FOREIGN KEY ("СправСотр") REFERENCES "СправСотр" ("primaryKey");
+
+CREATE INDEX "КартДоступ_IС_8793" on "КартДоступ" ("СправСотр");
 
 ALTER TABLE "СправСотр"
 	ADD CONSTRAINT "СправСотр_FСп_8900" FOREIGN KEY ("СправДолж") REFERENCES "СправДолж" ("primaryKey");

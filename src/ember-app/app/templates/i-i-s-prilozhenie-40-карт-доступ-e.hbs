@@ -1,0 +1,53 @@
+<h3 class="ui header">{{t "forms.i-i-s-prilozhenie-40-карт-доступ-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-prilozhenie-40-карт-доступ-e.справСотр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.справСотр
+      relationName="справСотр"
+      projection="СправСотрL"
+      title=(t "forms.i-i-s-prilozhenie-40-карт-доступ-e.справСотр-caption")
+      readonly=readonly
+      componentName="справСотрLookup"
+      class=(if (v-get validationModel "справСотр" "isInvalid") "error")
+      data-test-i-i-s-prilozhenie-40-карт-доступ-e-справСотр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "справСотр" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.справСотр.фИОСотр
+      class=(if (v-get validationModel.справСотр "фИОСотр" "isInvalid") "error")
+      label=(t "forms.i-i-s-prilozhenie-40-карт-доступ-e.справСотр.фИОСотр-caption")
+      data-test-i-i-s-prilozhenie-40-карт-доступ-e-справСотр-фИОСотр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.справСотр "фИОСотр" "message")}}
+  </div>
+</form>

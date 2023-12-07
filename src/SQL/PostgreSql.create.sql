@@ -3,6 +3,12 @@
 
 
 
+CREATE TABLE КартДоступ (
+ primaryKey UUID NOT NULL,
+ СправСотр UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE СправДолж (
  primaryKey UUID NOT NULL,
  Должность VARCHAR(255) NULL,
@@ -119,6 +125,9 @@ CREATE TABLE ApplicationLog (
  PRIMARY KEY (primaryKey));
 
 
+
+ ALTER TABLE КартДоступ ADD CONSTRAINT FK47e573308c533a7f3d4877ff930611b8db7fb919 FOREIGN KEY (СправСотр) REFERENCES СправСотр; 
+CREATE INDEX Index47e573308c533a7f3d4877ff930611b8db7fb919 on КартДоступ (СправСотр); 
 
  ALTER TABLE СправСотр ADD CONSTRAINT FK16b7a5f6f06361e4bff31f21b8567463326ad9f9 FOREIGN KEY (СправДолж) REFERENCES СправДолж; 
 CREATE INDEX Index16b7a5f6f06361e4bff31f21b8567463326ad9f9 on СправСотр (СправДолж); 

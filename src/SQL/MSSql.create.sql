@@ -2,6 +2,15 @@
 
 
 
+CREATE TABLE [КартДоступ] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СправСотр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [СправДолж] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

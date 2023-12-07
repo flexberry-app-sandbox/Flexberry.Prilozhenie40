@@ -21,6 +21,13 @@
           "caption": "Справочник Сотрудники",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-40-карт-доступ-l",
+          "menuName": null,
+          "caption": "Карты Доступа",
+          "title": "",
+          "children": null
         }
       ]
     }

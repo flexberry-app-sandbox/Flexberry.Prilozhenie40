@@ -1,0 +1,82 @@
+﻿{
+  "name": "IISPrilozhenie_40КартДоступ",
+  "modelName": "i-i-s-prilozhenie-40-карт-доступ",
+  "className": "КартДоступ",
+  "nameSpace": "IIS.Prilozhenie_40",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справСотр",
+      "relatedTo": "i-i-s-prilozhenie-40-справ-сотр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КартДоступE",
+      "modelName": "i-i-s-prilozhenie-40-карт-доступ",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотр",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "default",
+          "caption": "Сотрудник",
+          "name": "справСотр",
+          "relatedTo": "i-i-s-prilozhenie-40-справ-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КартДоступL",
+      "modelName": "i-i-s-prilozhenie-40-карт-доступ",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотр",
+              "caption": "Ответственный",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ответственный",
+          "name": "справСотр",
+          "relatedTo": "i-i-s-prilozhenie-40-справ-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

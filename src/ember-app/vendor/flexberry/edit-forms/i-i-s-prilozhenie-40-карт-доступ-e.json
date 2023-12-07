@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправСотр",
+      "projection": "СправСотрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "",
+  "name": "IISPrilozhenie_40КартДоступE",
+  "className": "КартДоступE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-40-карт-доступ",
+      "modelProjection": "КартДоступE"
+    }
+  ]
+}
