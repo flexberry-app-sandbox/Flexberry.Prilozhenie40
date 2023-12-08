@@ -9,12 +9,12 @@
       "detailModelName": null
     },
     {
-      "master": "справУчен",
-      "displayAttributeName": "фио Ученика",
-      "required": true,
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
       "relationName": "База_Данных.СправУчен",
       "projection": "СправУченL",
-      "detailModelName": "i-i-s-prilozhenie-40-база-данных"
+      "detailModelName": null
     }
   ],
   "external": false,
