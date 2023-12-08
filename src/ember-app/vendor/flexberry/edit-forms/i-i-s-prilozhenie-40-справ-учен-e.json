@@ -1,5 +1,14 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправРод",
+      "projection": "СправРодL",
+      "detailModelName": null
+    }
+  ],
   "external": false,
   "caption": "",
   "name": "IISPrilozhenie_40СправУченE",

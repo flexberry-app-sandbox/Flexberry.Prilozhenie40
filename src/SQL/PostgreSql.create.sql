@@ -6,6 +6,7 @@
 CREATE TABLE СправУчен (
  primaryKey UUID NOT NULL,
  Фио VARCHAR(255) NULL,
+ СправРод UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -145,6 +146,9 @@ CREATE TABLE ApplicationLog (
  PRIMARY KEY (primaryKey));
 
 
+
+ ALTER TABLE СправУчен ADD CONSTRAINT FK32eb3c2cbffbec570d3ccc4c9a425bcce46c9715 FOREIGN KEY (СправРод) REFERENCES СправРод; 
+CREATE INDEX Index32eb3c2cbffbec570d3ccc4c9a425bcce46c9715 on СправУчен (СправРод); 
 
  ALTER TABLE КартДоступ ADD CONSTRAINT FK47e573308c533a7f3d4877ff930611b8db7fb919 FOREIGN KEY (СправСотр) REFERENCES СправСотр; 
 CREATE INDEX Index47e573308c533a7f3d4877ff930611b8db7fb919 on КартДоступ (СправСотр); 
