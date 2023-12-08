@@ -55,6 +55,8 @@ CREATE TABLE [База_Данных] (
 
 	 [НомерКарты] VARCHAR(255)  NULL,
 
+	 [СправУчен] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [КартДоступ] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))

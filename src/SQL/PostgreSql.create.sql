@@ -37,6 +37,7 @@ CREATE TABLE СправСотр (
 CREATE TABLE База_Данных (
  primaryKey UUID NOT NULL,
  НомерКарты VARCHAR(255) NULL,
+ СправУчен UUID NOT NULL,
  КартДоступ UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
@@ -150,6 +151,9 @@ CREATE INDEX Index47e573308c533a7f3d4877ff930611b8db7fb919 on КартДосту
 
  ALTER TABLE СправСотр ADD CONSTRAINT FK16b7a5f6f06361e4bff31f21b8567463326ad9f9 FOREIGN KEY (СправДолж) REFERENCES СправДолж; 
 CREATE INDEX Index16b7a5f6f06361e4bff31f21b8567463326ad9f9 on СправСотр (СправДолж); 
+
+ ALTER TABLE База_Данных ADD CONSTRAINT FKd929ba2a8912960653f49a656fe007b075964898 FOREIGN KEY (СправУчен) REFERENCES СправУчен; 
+CREATE INDEX Indexd929ba2a8912960653f49a656fe007b075964898 on База_Данных (СправУчен); 
 
  ALTER TABLE База_Данных ADD CONSTRAINT FK8be0d69a479163c5ccd066a9c1ed07574a9bc9bb FOREIGN KEY (КартДоступ) REFERENCES КартДоступ; 
 CREATE INDEX Index8be0d69a479163c5ccd066a9c1ed07574a9bc9bb on База_Данных (КартДоступ); 
