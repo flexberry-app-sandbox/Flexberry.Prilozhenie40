@@ -9,8 +9,6 @@ CREATE TABLE "СправУчен"
 
 	"Фио" NVARCHAR2(255) NULL,
 
-	"СправРод" RAW(16) NOT NULL,
-
 	 PRIMARY KEY ("primaryKey")
 ) ;
 
@@ -273,11 +271,6 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
-
-ALTER TABLE "СправУчен"
-	ADD CONSTRAINT "СправУчен_FСп_8938" FOREIGN KEY ("СправРод") REFERENCES "СправРод" ("primaryKey");
-
-CREATE INDEX "СправУчен_IСпр_659" on "СправУчен" ("СправРод");
 
 ALTER TABLE "КартДоступ"
 	ADD CONSTRAINT "КартДоступ_FС_9230" FOREIGN KEY ("СправСотр") REFERENCES "СправСотр" ("primaryKey");

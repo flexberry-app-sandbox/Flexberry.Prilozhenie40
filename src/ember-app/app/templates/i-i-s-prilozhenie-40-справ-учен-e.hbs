@@ -34,30 +34,4 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "фио" "message")}}
   </div>
-  <div class="field">
-    <label>{{t "forms.i-i-s-prilozhenie-40-справ-учен-e.справРод-caption"}}</label>
-    {{flexberry-lookup
-      choose="showLookupDialog"
-      remove="removeLookupValue"
-      value=model.справРод
-      relationName="справРод"
-      projection="СправРодL"
-      title=(t "forms.i-i-s-prilozhenie-40-справ-учен-e.справРод-caption")
-      readonly=readonly
-      componentName="справРодLookup"
-      class=(if (v-get validationModel "справРод" "isInvalid") "error")
-      data-test-i-i-s-prilozhenie-40-справ-учен-e-справРод=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "справРод" "message")}}
-  </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.справРод.фиоРод
-      class=(if (v-get validationModel.справРод "фиоРод" "isInvalid") "error")
-      label=(t "forms.i-i-s-prilozhenie-40-справ-учен-e.справРод.фиоРод-caption")
-      data-test-i-i-s-prilozhenie-40-справ-учен-e-справРод-фиоРод=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.справРод "фиоРод" "message")}}
-  </div>
 </form>

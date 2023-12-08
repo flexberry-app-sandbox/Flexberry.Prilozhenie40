@@ -16,15 +16,7 @@
       "ordered": false
     }
   ],
-  "belongsTo": [
-    {
-      "polymorphic": false,
-      "presence": true,
-      "name": "справРод",
-      "relatedTo": "i-i-s-prilozhenie-40-справ-род",
-      "inverse": null
-    }
-  ],
+  "belongsTo": [],
   "hasMany": [],
   "projections": [
     {
@@ -38,29 +30,7 @@
           "index": 0
         }
       ],
-      "belongsTo": [
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
-          "relationName": "СправРод",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "фиоРод",
-              "caption": "Фио Родителя",
-              "hidden": false,
-              "index": 2
-            }
-          ],
-          "index": 1,
-          "type": "default",
-          "caption": "Родитель",
-          "name": "справРод",
-          "relatedTo": "i-i-s-prilozhenie-40-справ-род",
-          "inverse": null
-        }
-      ],
+      "belongsTo": [],
       "hasMany": []
     },
     {
@@ -74,29 +44,7 @@
           "index": 0
         }
       ],
-      "belongsTo": [
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
-          "relationName": "СправРод",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "фиоРод",
-              "caption": "Фио Родителя",
-              "hidden": false,
-              "index": 1
-            }
-          ],
-          "index": -1,
-          "type": "default",
-          "caption": "Фио Родителя",
-          "name": "справРод",
-          "relatedTo": "i-i-s-prilozhenie-40-справ-род",
-          "inverse": null
-        }
-      ],
+      "belongsTo": [],
       "hasMany": []
     }
   ],

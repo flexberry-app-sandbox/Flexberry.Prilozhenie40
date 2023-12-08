@@ -37,7 +37,7 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('База_ДанныхE', 'i-i-s-prilozhenie-40-база-данных', {
     номерКарты: attr('Номер Карты', { index: 0 }),
     справУчен: belongsTo('i-i-s-prilozhenie-40-справ-учен', 'Ученик', {
-      фио: attr('Фио Ученика', { index: 2 })
-    }, { index: 1, displayMemberPath: 'фио Ученика' })
+      фио: attr('ФИО Ученика', { index: 2 })
+    }, { index: 1, displayMemberPath: 'фИО Ученика' })
   });
 };

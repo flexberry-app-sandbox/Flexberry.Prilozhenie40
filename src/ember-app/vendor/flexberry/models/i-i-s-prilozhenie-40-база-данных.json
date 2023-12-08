@@ -47,15 +47,15 @@
       ],
       "belongsTo": [
         {
-          "lookupValue": "Фио Ученика",
-          "lookupValueField": "фио Ученика",
+          "lookupValue": "ФИО Ученика",
+          "lookupValueField": "фИО Ученика",
           "relationName": "СправУчен",
           "belongsTo": [],
           "hidden": false,
           "attrs": [
             {
               "name": "фио",
-              "caption": "Фио Ученика",
+              "caption": "ФИО Ученика",
               "hidden": false,
               "index": 2
             }

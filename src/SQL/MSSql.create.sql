@@ -8,8 +8,6 @@ CREATE TABLE [СправУчен] (
 
 	 [Фио] VARCHAR(255)  NULL,
 
-	 [СправРод] UNIQUEIDENTIFIER  NOT NULL,
-
 	 PRIMARY KEY ([primaryKey]))
 
 

@@ -32,8 +32,8 @@ namespace IIS.Prilozhenie_40
     [View("База_ДанныхE", new string[] {
             "НомерКарты as \'Номер Карты\'",
             "СправУчен as \'Ученик\'",
-            "СправУчен.Фио as \'Фио Ученика\'"})]
-    [MasterViewDefineAttribute("База_ДанныхE", "СправУчен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио Ученика")]
+            "СправУчен.Фио as \'ФИО Ученика\'"})]
+    [MasterViewDefineAttribute("База_ДанныхE", "СправУчен", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИО Ученика")]
     public class База_Данных : ICSSoft.STORMNET.DataObject
     {
         
