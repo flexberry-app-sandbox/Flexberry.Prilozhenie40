@@ -3,6 +3,12 @@
 
 
 
+CREATE TABLE СправУчен (
+ primaryKey UUID NOT NULL,
+ Фио VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE КартДоступ (
  primaryKey UUID NOT NULL,
  СправСотр UUID NOT NULL,

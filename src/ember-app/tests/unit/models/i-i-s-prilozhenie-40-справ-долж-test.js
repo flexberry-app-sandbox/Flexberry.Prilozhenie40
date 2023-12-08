@@ -7,6 +7,7 @@ moduleForModel('i-i-s-prilozhenie-40-справ-долж', 'Unit | Model | i-i-s
     'model:i-i-s-prilozhenie-40-карт-доступ',
     'model:i-i-s-prilozhenie-40-справ-долж',
     'model:i-i-s-prilozhenie-40-справ-сотр',
+    'model:i-i-s-prilozhenie-40-справ-учен',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

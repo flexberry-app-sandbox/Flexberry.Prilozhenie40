@@ -21,6 +21,11 @@ Router.map(function () {
   { path: 'i-i-s-prilozhenie-40-справ-сотр-e/:id' });
   this.route('i-i-s-prilozhenie-40-справ-сотр-e.new',
   { path: 'i-i-s-prilozhenie-40-справ-сотр-e/new' });
+  this.route('i-i-s-prilozhenie-40-справ-учен-l');
+  this.route('i-i-s-prilozhenie-40-справ-учен-e',
+  { path: 'i-i-s-prilozhenie-40-справ-учен-e/:id' });
+  this.route('i-i-s-prilozhenie-40-справ-учен-e.new',
+  { path: 'i-i-s-prilozhenie-40-справ-учен-e/new' });
 });
 
 export default Router;
