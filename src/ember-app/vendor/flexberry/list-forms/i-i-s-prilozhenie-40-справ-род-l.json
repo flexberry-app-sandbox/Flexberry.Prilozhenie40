@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-40-справ-род-e",
+  "editForm": "i-i-s-prilozhenie-40-справ-род-e",
+  "external": false,
+  "caption": "",
+  "name": "IISPrilozhenie_40СправРодL",
+  "className": "СправРодL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-40-справ-род",
+      "modelProjection": "СправРодL"
+    }
+  ]
+}

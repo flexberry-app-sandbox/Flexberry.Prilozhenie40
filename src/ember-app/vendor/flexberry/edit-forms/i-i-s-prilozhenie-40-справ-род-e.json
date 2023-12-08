@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "",
+  "name": "IISPrilozhenie_40СправРодE",
+  "className": "СправРодE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-40-справ-род",
+      "modelProjection": "СправРодE"
+    }
+  ]
+}

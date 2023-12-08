@@ -15,6 +15,12 @@ CREATE TABLE КартДоступ (
  PRIMARY KEY (primaryKey));
 
 
+CREATE TABLE СправРод (
+ primaryKey UUID NOT NULL,
+ ФиоРод VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE СправДолж (
  primaryKey UUID NOT NULL,
  Должность VARCHAR(255) NULL,

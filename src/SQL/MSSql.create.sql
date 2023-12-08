@@ -20,6 +20,15 @@ CREATE TABLE [КартДоступ] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [СправРод] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [ФиоРод] VARCHAR(255)  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [СправДолж] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

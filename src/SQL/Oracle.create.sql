@@ -24,6 +24,17 @@ CREATE TABLE "КартДоступ"
 ) ;
 
 
+CREATE TABLE "СправРод"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"ФиоРод" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "СправДолж"
 (
 

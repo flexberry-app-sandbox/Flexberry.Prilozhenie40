@@ -1,8 +1,14 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-prilozhenie-40-карт-доступ', 'Unit | Model | i-i-s-prilozhenie-40-карт-доступ', {
+moduleForModel('i-i-s-prilozhenie-40-справ-род', 'Unit | Serializer | i-i-s-prilozhenie-40-справ-род', {
   // Specify the other units that are required for this test.
   needs: [
+    'serializer:i-i-s-prilozhenie-40-справ-род',
+    'service:syncer',
+    'transform:file',
+    'transform:decimal',
+    'transform:guid',
+
     'model:i-i-s-prilozhenie-40-база-данных',
     'model:i-i-s-prilozhenie-40-карт-доступ',
     'model:i-i-s-prilozhenie-40-справ-долж',
@@ -15,13 +21,14 @@ moduleForModel('i-i-s-prilozhenie-40-карт-доступ', 'Unit | Model | i-i
     'validator:date',
     'validator:belongs-to',
     'validator:has-many',
-    'service:syncer',
   ],
 });
 
-test('it exists', function(assert) {
-  let model = this.subject();
+// Replace this with your real tests.
+test('it serializes records', function(assert) {
+  let record = this.subject();
 
-  // let store = this.store();
-  assert.ok(!!model);
+  let serializedRecord = record.serialize();
+
+  assert.ok(serializedRecord);
 });
