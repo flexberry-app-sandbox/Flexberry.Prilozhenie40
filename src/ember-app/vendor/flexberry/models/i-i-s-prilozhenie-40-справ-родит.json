@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISPrilozhenie_40СправРодит",
+  "modelName": "i-i-s-prilozhenie-40-справ-родит",
+  "className": "СправРодит",
+  "nameSpace": "IIS.Prilozhenie_40",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фио",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправРодитE",
+      "modelName": "i-i-s-prilozhenie-40-справ-родит",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио Родителя",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СправРодитL",
+      "modelName": "i-i-s-prilozhenie-40-справ-родит",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио Родителя",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

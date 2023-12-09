@@ -13,6 +13,7 @@ moduleForModel('i-i-s-prilozhenie-40-справ-сотр', 'Unit | Serializer | 
     'model:i-i-s-prilozhenie-40-карт-доступ',
     'model:i-i-s-prilozhenie-40-справ-долж',
     'model:i-i-s-prilozhenie-40-справ-род',
+    'model:i-i-s-prilozhenie-40-справ-родит',
     'model:i-i-s-prilozhenie-40-справ-сотр',
     'model:i-i-s-prilozhenie-40-справ-уч',
     'model:i-i-s-prilozhenie-40-справ-учен',

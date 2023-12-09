@@ -44,6 +44,15 @@ CREATE TABLE [База_Данных] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [СправРодит] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Фио] VARCHAR(255)  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [СправУч] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

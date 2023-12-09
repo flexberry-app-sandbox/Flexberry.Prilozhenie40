@@ -52,6 +52,17 @@ CREATE TABLE "База_Данных"
 ) ;
 
 
+CREATE TABLE "СправРодит"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Фио" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "СправУч"
 (
 

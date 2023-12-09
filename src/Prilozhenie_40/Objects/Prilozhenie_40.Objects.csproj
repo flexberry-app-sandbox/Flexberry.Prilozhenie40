@@ -126,6 +126,9 @@
     <Compile Include="СправУч.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="СправРодит.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

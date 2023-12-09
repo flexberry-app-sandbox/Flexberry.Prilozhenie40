@@ -35,6 +35,13 @@
           "caption": "Справочник Ученик",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-40-справ-родит-l",
+          "menuName": null,
+          "caption": "Справочник Родители",
+          "title": "",
+          "children": null
         }
       ]
     }

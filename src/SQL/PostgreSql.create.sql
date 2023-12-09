@@ -30,6 +30,12 @@ CREATE TABLE База_Данных (
  PRIMARY KEY (primaryKey));
 
 
+CREATE TABLE СправРодит (
+ primaryKey UUID NOT NULL,
+ Фио VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE СправУч (
  primaryKey UUID NOT NULL,
  Фио VARCHAR(255) NULL,
