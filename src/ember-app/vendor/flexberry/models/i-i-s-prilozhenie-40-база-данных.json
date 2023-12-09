@@ -20,13 +20,6 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "справУчен",
-      "relatedTo": "i-i-s-prilozhenie-40-справ-учен",
-      "inverse": null
-    },
-    {
-      "polymorphic": false,
-      "presence": true,
       "name": "картДоступ",
       "relatedTo": "i-i-s-prilozhenie-40-карт-доступ",
       "inverse": "база_Данных"

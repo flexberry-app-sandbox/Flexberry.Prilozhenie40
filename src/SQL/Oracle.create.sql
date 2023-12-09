@@ -2,36 +2,12 @@
 
 
 
-CREATE TABLE "СправУчен"
-(
-
-	"primaryKey" RAW(16) NOT NULL,
-
-	"Фио" NVARCHAR2(255) NULL,
-
-	"СправРод" RAW(16) NOT NULL,
-
-	 PRIMARY KEY ("primaryKey")
-) ;
-
-
 CREATE TABLE "КартДоступ"
 (
 
 	"primaryKey" RAW(16) NOT NULL,
 
 	"СправСотр" RAW(16) NOT NULL,
-
-	 PRIMARY KEY ("primaryKey")
-) ;
-
-
-CREATE TABLE "СправРод"
-(
-
-	"primaryKey" RAW(16) NOT NULL,
-
-	"ФиоРод" NVARCHAR2(255) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -67,8 +43,6 @@ CREATE TABLE "База_Данных"
 	"primaryKey" RAW(16) NOT NULL,
 
 	"НомерКарты" NVARCHAR2(255) NULL,
-
-	"СправУчен" RAW(16) NOT NULL,
 
 	"КартДоступ" RAW(16) NOT NULL,
 
@@ -274,11 +248,6 @@ CREATE TABLE "ApplicationLog"
 
 
 
-ALTER TABLE "СправУчен"
-	ADD CONSTRAINT "СправУчен_FСп_8938" FOREIGN KEY ("СправРод") REFERENCES "СправРод" ("primaryKey");
-
-CREATE INDEX "СправУчен_IСпр_659" on "СправУчен" ("СправРод");
-
 ALTER TABLE "КартДоступ"
 	ADD CONSTRAINT "КартДоступ_FС_9230" FOREIGN KEY ("СправСотр") REFERENCES "СправСотр" ("primaryKey");
 
@@ -288,11 +257,6 @@ ALTER TABLE "СправСотр"
 	ADD CONSTRAINT "СправСотр_FСп_8900" FOREIGN KEY ("СправДолж") REFERENCES "СправДолж" ("primaryKey");
 
 CREATE INDEX "СправСотр_IСп_1094" on "СправСотр" ("СправДолж");
-
-ALTER TABLE "База_Данных"
-	ADD CONSTRAINT "База_Данных_FС_5140" FOREIGN KEY ("СправУчен") REFERENCES "СправУчен" ("primaryKey");
-
-CREATE INDEX "База_Данных_IС_5861" on "База_Данных" ("СправУчен");
 
 ALTER TABLE "База_Данных"
 	ADD CONSTRAINT "База_Данных_FК_2479" FOREIGN KEY ("КартДоступ") REFERENCES "КартДоступ" ("primaryKey");

@@ -7,14 +7,6 @@
       "relationName": "СправСотр",
       "projection": "СправСотрL",
       "detailModelName": null
-    },
-    {
-      "master": null,
-      "displayAttributeName": null,
-      "required": false,
-      "relationName": "База_Данных.СправУчен",
-      "projection": "СправУченL",
-      "detailModelName": null
     }
   ],
   "external": false,

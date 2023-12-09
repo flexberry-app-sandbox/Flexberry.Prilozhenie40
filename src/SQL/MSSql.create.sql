@@ -2,31 +2,11 @@
 
 
 
-CREATE TABLE [СправУчен] (
-
-	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
-
-	 [Фио] VARCHAR(255)  NULL,
-
-	 [СправРод] UNIQUEIDENTIFIER  NOT NULL,
-
-	 PRIMARY KEY ([primaryKey]))
-
-
 CREATE TABLE [КартДоступ] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [СправСотр] UNIQUEIDENTIFIER  NOT NULL,
-
-	 PRIMARY KEY ([primaryKey]))
-
-
-CREATE TABLE [СправРод] (
-
-	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
-
-	 [ФиоРод] VARCHAR(255)  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 
@@ -56,8 +36,6 @@ CREATE TABLE [База_Данных] (
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [НомерКарты] VARCHAR(255)  NULL,
-
-	 [СправУчен] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [КартДоступ] UNIQUEIDENTIFIER  NOT NULL,
 
