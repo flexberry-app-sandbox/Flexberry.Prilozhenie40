@@ -29,13 +29,17 @@ namespace IIS.Prilozhenie_40
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СправУчE", new string[] {
-            "Фио as \'Фио Ученика\'"})]
+            "Фио as \'Фио Ученика\'",
+            "СправРодит as \'Родители\'",
+            "СправРодит.Фио as \'Фио Родителя\'"})]
     [View("СправУчL", new string[] {
             "Фио as \'Фио Ученика\'"})]
     public class СправУч : ICSSoft.STORMNET.DataObject
     {
         
         private string fФио;
+        
+        private IIS.Prilozhenie_40.СправРодит fСправРодит;
         
         // *** Start programmer edit section *** (СправУч CustomMembers)
 
@@ -71,6 +75,40 @@ namespace IIS.Prilozhenie_40
                 // *** Start programmer edit section *** (СправУч.Фио Set end)
 
                 // *** End programmer edit section *** (СправУч.Фио Set end)
+            }
+        }
+        
+        /// <summary>
+        /// СправУч.
+        /// </summary>
+        // *** Start programmer edit section *** (СправУч.СправРодит CustomAttributes)
+
+        // *** End programmer edit section *** (СправУч.СправРодит CustomAttributes)
+        [PropertyStorage(new string[] {
+                "СправРодит"})]
+        [NotNull()]
+        public virtual IIS.Prilozhenie_40.СправРодит СправРодит
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СправУч.СправРодит Get start)
+
+                // *** End programmer edit section *** (СправУч.СправРодит Get start)
+                IIS.Prilozhenie_40.СправРодит result = this.fСправРодит;
+                // *** Start programmer edit section *** (СправУч.СправРодит Get end)
+
+                // *** End programmer edit section *** (СправУч.СправРодит Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СправУч.СправРодит Set start)
+
+                // *** End programmer edit section *** (СправУч.СправРодит Set start)
+                this.fСправРодит = value;
+                // *** Start programmer edit section *** (СправУч.СправРодит Set end)
+
+                // *** End programmer edit section *** (СправУч.СправРодит Set end)
             }
         }
         

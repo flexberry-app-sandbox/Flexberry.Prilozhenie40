@@ -59,6 +59,8 @@ CREATE TABLE [СправУч] (
 
 	 [Фио] VARCHAR(255)  NULL,
 
+	 [СправРодит] UNIQUEIDENTIFIER  NOT NULL,
+
 	 PRIMARY KEY ([primaryKey]))
 
 

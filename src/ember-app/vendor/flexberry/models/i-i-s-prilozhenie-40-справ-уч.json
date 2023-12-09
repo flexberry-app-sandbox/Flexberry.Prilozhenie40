@@ -16,7 +16,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справРодит",
+      "relatedTo": "i-i-s-prilozhenie-40-справ-родит",
+      "inverse": null
+    }
+  ],
   "hasMany": [],
   "projections": [
     {
@@ -30,7 +38,29 @@
           "index": 0
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправРодит",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио Родителя",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Родители",
+          "name": "справРодит",
+          "relatedTo": "i-i-s-prilozhenie-40-справ-родит",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {
