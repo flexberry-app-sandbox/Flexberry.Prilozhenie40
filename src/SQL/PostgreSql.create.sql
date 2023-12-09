@@ -30,16 +30,9 @@ CREATE TABLE База_Данных (
  PRIMARY KEY (primaryKey));
 
 
-CREATE TABLE СправРодит (
- primaryKey UUID NOT NULL,
- Фио VARCHAR(255) NULL,
- PRIMARY KEY (primaryKey));
-
-
 CREATE TABLE СправУч (
  primaryKey UUID NOT NULL,
  Фио VARCHAR(255) NULL,
- СправРодит UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -158,9 +151,6 @@ CREATE INDEX Indexc80c57e58f53e3a3f6f9510697f4d562ccffe201 on База_Данн�
 
  ALTER TABLE База_Данных ADD CONSTRAINT FK8be0d69a479163c5ccd066a9c1ed07574a9bc9bb FOREIGN KEY (КартДоступ) REFERENCES КартДоступ; 
 CREATE INDEX Index8be0d69a479163c5ccd066a9c1ed07574a9bc9bb on База_Данных (КартДоступ); 
-
- ALTER TABLE СправУч ADD CONSTRAINT FK301c619654be2eb797b7f3e3cd41a49e8d8e6bb4 FOREIGN KEY (СправРодит) REFERENCES СправРодит; 
-CREATE INDEX Index301c619654be2eb797b7f3e3cd41a49e8d8e6bb4 on СправУч (СправРодит); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 

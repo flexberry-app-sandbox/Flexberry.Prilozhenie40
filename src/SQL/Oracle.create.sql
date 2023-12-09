@@ -52,25 +52,12 @@ CREATE TABLE "База_Данных"
 ) ;
 
 
-CREATE TABLE "СправРодит"
-(
-
-	"primaryKey" RAW(16) NOT NULL,
-
-	"Фио" NVARCHAR2(255) NULL,
-
-	 PRIMARY KEY ("primaryKey")
-) ;
-
-
 CREATE TABLE "СправУч"
 (
 
 	"primaryKey" RAW(16) NOT NULL,
 
 	"Фио" NVARCHAR2(255) NULL,
-
-	"СправРодит" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -293,11 +280,6 @@ ALTER TABLE "База_Данных"
 	ADD CONSTRAINT "База_Данных_FК_2479" FOREIGN KEY ("КартДоступ") REFERENCES "КартДоступ" ("primaryKey");
 
 CREATE INDEX "База_Данных_IК_3422" on "База_Данных" ("КартДоступ");
-
-ALTER TABLE "СправУч"
-	ADD CONSTRAINT "СправУч_FСпра_1723" FOREIGN KEY ("СправРодит") REFERENCES "СправРодит" ("primaryKey");
-
-CREATE INDEX "СправУч_IСпра_3433" on "СправУч" ("СправРодит");
 
 ALTER TABLE "STORMWEBSEARCH"
 	ADD CONSTRAINT "STORMWEBSEARCH_FSTORMFILT_6521" FOREIGN KEY ("FilterSetting_m0") REFERENCES "STORMFILTERSETTING" ("primaryKey");
