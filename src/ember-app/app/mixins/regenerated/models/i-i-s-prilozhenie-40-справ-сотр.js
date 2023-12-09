@@ -29,7 +29,7 @@ export let defineProjections = function (modelClass) {
   modelClass.defineProjection('СправСотрE', 'i-i-s-prilozhenie-40-справ-сотр', {
     фИОСотр: attr('Сотрудник', { index: 0 }),
     справДолж: belongsTo('i-i-s-prilozhenie-40-справ-долж', 'Должность', {
-      должность: attr('Должность', { index: 2 })
+      должность: attr('Должность', { index: 2, hidden: true })
     }, { index: 1 })
   });
 

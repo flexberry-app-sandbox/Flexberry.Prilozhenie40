@@ -49,7 +49,7 @@
             {
               "name": "должность",
               "caption": "Должность",
-              "hidden": false,
+              "hidden": true,
               "index": 2
             }
           ],
