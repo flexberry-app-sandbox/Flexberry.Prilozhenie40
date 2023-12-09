@@ -26,6 +26,11 @@ Router.map(function () {
   { path: 'i-i-s-prilozhenie-40-справ-сотр-e/:id' });
   this.route('i-i-s-prilozhenie-40-справ-сотр-e.new',
   { path: 'i-i-s-prilozhenie-40-справ-сотр-e/new' });
+  this.route('i-i-s-prilozhenie-40-справ-уч-l');
+  this.route('i-i-s-prilozhenie-40-справ-уч-e',
+  { path: 'i-i-s-prilozhenie-40-справ-уч-e/:id' });
+  this.route('i-i-s-prilozhenie-40-справ-уч-e.new',
+  { path: 'i-i-s-prilozhenie-40-справ-уч-e/new' });
   this.route('i-i-s-prilozhenie-40-справ-учен-l');
   this.route('i-i-s-prilozhenie-40-справ-учен-e',
   { path: 'i-i-s-prilozhenie-40-справ-учен-e/:id' });

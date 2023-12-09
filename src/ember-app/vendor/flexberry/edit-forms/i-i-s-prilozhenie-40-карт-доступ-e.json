@@ -7,6 +7,14 @@
       "relationName": "СправСотр",
       "projection": "СправСотрL",
       "detailModelName": null
+    },
+    {
+      "master": "справУч",
+      "displayAttributeName": "фио Ученика",
+      "required": true,
+      "relationName": "База_Данных.СправУч",
+      "projection": "СправУчL",
+      "detailModelName": "i-i-s-prilozhenie-40-база-данных"
     }
   ],
   "external": false,

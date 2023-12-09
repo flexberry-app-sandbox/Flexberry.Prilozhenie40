@@ -20,6 +20,13 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "справУч",
+      "relatedTo": "i-i-s-prilozhenie-40-справ-уч",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "картДоступ",
       "relatedTo": "i-i-s-prilozhenie-40-карт-доступ",
       "inverse": "база_Данных"
@@ -38,7 +45,29 @@
           "index": 0
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Фио Ученика",
+          "lookupValueField": "фио Ученика",
+          "relationName": "СправУч",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио Ученика",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Ученик",
+          "name": "справУч",
+          "relatedTo": "i-i-s-prilozhenie-40-справ-уч",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

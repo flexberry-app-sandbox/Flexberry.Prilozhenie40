@@ -37,7 +37,18 @@ CREATE TABLE [База_Данных] (
 
 	 [НомерКарты] VARCHAR(255)  NULL,
 
+	 [СправУч] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [КартДоступ] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
+CREATE TABLE [СправУч] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Фио] VARCHAR(255)  NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

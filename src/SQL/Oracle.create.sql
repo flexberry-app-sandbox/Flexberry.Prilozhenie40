@@ -44,7 +44,20 @@ CREATE TABLE "База_Данных"
 
 	"НомерКарты" NVARCHAR2(255) NULL,
 
+	"СправУч" RAW(16) NOT NULL,
+
 	"КартДоступ" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
+CREATE TABLE "СправУч"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Фио" NVARCHAR2(255) NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -257,6 +270,11 @@ ALTER TABLE "СправСотр"
 	ADD CONSTRAINT "СправСотр_FСп_8900" FOREIGN KEY ("СправДолж") REFERENCES "СправДолж" ("primaryKey");
 
 CREATE INDEX "СправСотр_IСп_1094" on "СправСотр" ("СправДолж");
+
+ALTER TABLE "База_Данных"
+	ADD CONSTRAINT "База_Данных_FС_4721" FOREIGN KEY ("СправУч") REFERENCES "СправУч" ("primaryKey");
+
+CREATE INDEX "База_Данных_IС_7096" on "База_Данных" ("СправУч");
 
 ALTER TABLE "База_Данных"
 	ADD CONSTRAINT "База_Данных_FК_2479" FOREIGN KEY ("КартДоступ") REFERENCES "КартДоступ" ("primaryKey");

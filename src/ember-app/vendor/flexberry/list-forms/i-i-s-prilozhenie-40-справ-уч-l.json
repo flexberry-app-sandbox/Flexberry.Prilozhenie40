@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-prilozhenie-40-справ-уч-e",
+  "editForm": "i-i-s-prilozhenie-40-справ-уч-e",
+  "external": false,
+  "caption": "",
+  "name": "IISPrilozhenie_40СправУчL",
+  "className": "СправУчL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-prilozhenie-40-справ-уч",
+      "modelProjection": "СправУчL"
+    }
+  ]
+}

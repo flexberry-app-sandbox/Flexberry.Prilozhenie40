@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISPrilozhenie_40СправУч",
+  "modelName": "i-i-s-prilozhenie-40-справ-уч",
+  "className": "СправУч",
+  "nameSpace": "IIS.Prilozhenie_40",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фио",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправУчE",
+      "modelName": "i-i-s-prilozhenie-40-справ-уч",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио Ученика",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СправУчL",
+      "modelName": "i-i-s-prilozhenie-40-справ-уч",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио Ученика",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

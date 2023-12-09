@@ -8,6 +8,7 @@ moduleForModel('i-i-s-prilozhenie-40-справ-род', 'Unit | Model | i-i-s-p
     'model:i-i-s-prilozhenie-40-справ-долж',
     'model:i-i-s-prilozhenie-40-справ-род',
     'model:i-i-s-prilozhenie-40-справ-сотр',
+    'model:i-i-s-prilozhenie-40-справ-уч',
     'model:i-i-s-prilozhenie-40-справ-учен',
     'validator:ds-error',
     'validator:presence',

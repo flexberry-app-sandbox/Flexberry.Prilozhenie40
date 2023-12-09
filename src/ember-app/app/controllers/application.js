@@ -28,19 +28,25 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-40-справ-долж-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-долж-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-долж-l.title'),
-            icon: 'phone',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-40-справ-сотр-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-сотр-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-сотр-l.title'),
-            icon: 'table',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-40-карт-доступ-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-карт-доступ-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-карт-доступ-l.title'),
-            icon: 'suitcase',
+            icon: 'paperclip',
+            children: null
+          }, {
+            link: 'i-i-s-prilozhenie-40-справ-уч-l',
+            caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-уч-l.caption'),
+            title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-уч-l.title'),
+            icon: 'chart line',
             children: null
           }]
         }

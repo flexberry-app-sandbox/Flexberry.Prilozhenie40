@@ -28,6 +28,13 @@
           "caption": "Карты Доступа",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-40-справ-уч-l",
+          "menuName": null,
+          "caption": "Справочник Ученик",
+          "title": "",
+          "children": null
         }
       ]
     }
