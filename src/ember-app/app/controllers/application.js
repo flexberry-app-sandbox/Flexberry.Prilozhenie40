@@ -28,31 +28,31 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-40-справ-долж-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-долж-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-долж-l.title'),
-            icon: 'book',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-40-справ-сотр-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-сотр-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-сотр-l.title'),
-            icon: 'archive',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-40-карт-доступ-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-карт-доступ-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-карт-доступ-l.title'),
-            icon: 'suitcase',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-40-справ-уч-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-уч-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-уч-l.title'),
-            icon: 'phone',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-prilozhenie-40-справ-родит-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-родит-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-40.i-i-s-prilozhenie-40-справ-родит-l.title'),
-            icon: 'table',
+            icon: 'list',
             children: null
           }]
         }

@@ -35,7 +35,7 @@ namespace IIS.Prilozhenie_40
             "СправУч.Фио as \'Фио Ученика\'",
             "СправУч.СправРодит as \'Родитель\'",
             "СправУч.СправРодит.Фио as \'Фио Родителя\'"})]
-    [MasterViewDefineAttribute("База_ДанныхE", "СправУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио Родителя")]
+    [MasterViewDefineAttribute("База_ДанныхE", "СправУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио Ученика")]
     public class База_Данных : ICSSoft.STORMNET.DataObject
     {
         
